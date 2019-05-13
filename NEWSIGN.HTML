@@ -1,0 +1,88 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+  function checkPassword(form) {
+                var pass = document.getElementById("pass1").value;
+                var pass2 = document.getElementById("pass2").value;
+                if (pass1 != pass1) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+                else{
+                    window.open('login.html');
+                    target="_top";
+                }
+              }
+
+  </script>
+</head>
+<body>
+  <div class="container"></div>
+<div class="container">
+<div class="col-lg-4"></div>
+<div class="col-lg-4">
+  <center><h1>Sign up to E-learning</h1></center>
+</div>
+</div>
+  <div class="container">
+	<div class="col-lg-3"></div>
+	<div class="col-lg-6 ">
+    	<div class="jumbotron">
+
+<form onSubmit="checkPassword(this)">
+  <div class="form-group row">
+    <label for="inputFirstname" class="col-sm-2 col-form-label" style="padding:6px;" >Firstname</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Firstname" name="fname" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputLastname" class="col-sm-2 col-form-label" style="padding:6px;">Lastname</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPassword3" placeholder="Lastname" name="lname" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail" class="col-sm-2 col-form-label" style="padding:6px;">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" mame="email" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputDob" class="col-sm-2 col-form-label" style="padding:6px;">Dob</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="dd/mm/yyyy" name="dob" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputUsername" class="col-sm-2 col-form-label" style="padding:6px;">Username</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" placeholder="Username" name="username" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label" style="padding:6px;">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="pass1" placeholder="Password" name="pass" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputCpassword" class="col-sm-2 col-form-label" style="padding:6px;">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="pass2" placeholder="Confirm Password" name="cpass" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <center><button type="submit" class="btn btn-success">Sign up</button></center>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
